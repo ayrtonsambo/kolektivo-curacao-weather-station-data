@@ -1,3 +1,6 @@
+py -m venv env
+.\env\Scripts\activate
+
 from collections.abc import Mapping
 import requests
 import json
