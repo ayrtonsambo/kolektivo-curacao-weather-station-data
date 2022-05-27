@@ -1,0 +1,4 @@
+## create virtual env
+
+py -m venv env
+.\env\Scripts\activate
