@@ -6,9 +6,9 @@ Step 1: Create virtual environment
  
 Step 2: Clone repo: 
 
-  git clone https://github.com/ipfs/py-ipfs-http-client.git
+  ```git clone https://github.com/ipfs/py-ipfs-http-client.git```
  
 Step 3: Select relevant working directory:
 
-  cd py-ipfs-http-client
+  ```cd py-ipfs-http-client```
   
