@@ -3,12 +3,12 @@ This repository contains building blocks for the off-chain to on-chain weather s
 
 The 'PWS API Current observations' file retrieves the daily observations from Wunderground, writes that data to CSV and uploads it daily to IPFS. A lot of steps were derived from the IPFS shipyard gitHub: https://github.com/ipfs-shipyard/py-ipfs-http-client
 Step 1: Create virtual environment 
-  py -m venv <environment name>
-  .\venv\Scripts\activate
  
-Step 2: Clone repo
+Step 2: Clone repo: 
+
   git clone https://github.com/ipfs/py-ipfs-http-client.git
  
-Step 3: Select relevant working directory
+Step 3: Select relevant working directory:
+
   cd py-ipfs-http-client
   
