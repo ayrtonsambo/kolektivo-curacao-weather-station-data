@@ -21,5 +21,6 @@ def currentObservations(stationID, APIKEY):
             general_atts[el] = observations[0][el]
         else:
             break
+    del observations[0]['metric']
     return observations, metrics  
-    ## 'metric' needs to be taken out of 'observations' 
+
