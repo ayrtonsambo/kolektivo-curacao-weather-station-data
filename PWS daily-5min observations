@@ -1,0 +1,33 @@
+from collections.abc import Mapping
+import requests
+import json, csv
+import ipfshttpclient
+import pandas as pd
+
+import os
+
+# Global variables
+API_KEY = <API string>
+Scherpenheuvel = 'IWILLE44'
+Barber = 'IBOUBA1'
+Fuik = 'IWILLE45'
+
+### Daily observations (historical)
+def daily5minObservations(stationID, APIKEY):
+    response = requests.get('https://api.weather.com/v2/pws/observations/all/1day?stationId={}&format=json&units=m&apiKey={}'.format(Barber, API_KEY))
+    response = response.json()
+    response = response['observations']
+    market_data = []
+    new_dict = {}
+
+    for n in range(0, len(response)):
+        for key, value in response[n].items():
+            if key != 'metric':
+                new_dict[key] = response[n][key]
+            else:
+                new_dict.update(response[n][key])
+        market_data.append(new_dict)
+    
+    return market_data  ## Only retrieves data from the LAST element. Need to fix (identation?)
+        
+daily5minObservations("IWILLE44", API_KEY)
