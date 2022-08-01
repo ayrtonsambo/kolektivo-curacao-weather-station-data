@@ -7,9 +7,10 @@ Code is written in Python
 For most of the code here, it's best advised to create a virtual environment. The seteps below show how to create one with Jupyter Notebook.
 - Open Anaconda prompt
 - Run:
- py -m venv <environment_name>
+ 
+<sub> py -m venv <environment_name>
 
- .\<environment_name>\Scripts\activate
+ .\<environment_name>\Scripts\activate </sub>
 - Open Jupyter Notebook
  
   
