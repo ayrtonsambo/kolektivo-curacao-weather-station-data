@@ -13,10 +13,10 @@ For most of the code here, it's best advised to create a virtual environment. Th
  ``` .\<environment_name>\Scripts\activate ```
  
  Example:
+ 
  ``` py -m venv virtualenv```
  
  ``` .\virtualenv\Scripts\activate ```
- 
  
  
  
