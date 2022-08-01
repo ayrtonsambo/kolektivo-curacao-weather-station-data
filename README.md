@@ -8,9 +8,9 @@ For most of the code here, it's best advised to create a virtual environment. Th
 - Open Anaconda prompt
 - Run:
  
-<sub> py -m venv <environment_name> </sub>
+``` py -m venv <environment_name>
 
-<sub> .\<environment_name>\Scripts\activate </sub>
+ .\<environment_name>\Scripts\activate ```
  
 - Open Jupyter Notebook
  
