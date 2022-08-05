@@ -21,7 +21,7 @@ def Sum7DayObservations(stationID, APIKEY):
         return data
 
     # Make a for loop over all the elements and append to list.
-    Sum7Day_data = [process_response(i) for i in sorted(summaries, key = lambda x:x['obsTimeLocal'])]
+    Sum7Day_data = [process_response(i) for i in sorted(response, key = lambda x:x['obsTimeLocal'])]
 
     # verify if the list contains 7 days of data. 
     length = len(Sum7Day_data)
